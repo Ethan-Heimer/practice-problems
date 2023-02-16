@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="navigation" class="navbar active">
+        <ul>
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Search</a>
+        </ul>
+    </div>
+
+    <script>
+        const nav = document.getElementById("navigation");
+
+        console.log(nav.className);
+        console.log(nav.classList);
+
+        nav.classList.add("Foo");
+        nav.classList.add("Hello", "World"); 
+
+        console.log(nav.classList.contains("Foo"));
+
+        nav.classList.remove("Foo");
+        nav.classList.remove("Hello", "World");
+    </script>
+</body>
+</html>
